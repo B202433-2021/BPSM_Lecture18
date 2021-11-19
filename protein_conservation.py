@@ -25,6 +25,8 @@ for position in range(sequence_length):
 	conservation_score = 1 - (len(residue_set)-1)/26		# 26 letters + "-" but take away 1
 	conservation_scores.append(conservation_score)
 
+# adding a sliding window to average out the score would give a much smoother plot
+
 #print(conservation_scores)
 
 plt.figure(figsize=(20,8))
